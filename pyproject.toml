@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "my-project"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "^2.5.1"
+pandas = "^2.2.3"
+tqdm = "^4.67.1"
+scikit-learn = "^1.6.1"
+geopandas = "^1.0.1"
+joblib = "1.4.2"
+h5py = "^3.12.1"
+matplotlib = "^3.10.0"
+cdsapi = "^0.7.5"
+netcdf4 = "^1.7.2"
+xarray = "^2025.1.2"
+gdal = {path = "G:/Projects/Test/my-project/GDAL-3.10.1-cp312-cp312-win_amd64.whl"}
+#pyproj = {path = "G:/Projects/Test/my-project/pyproj-3.6.1-cp312-cp312-win_arm64.whl"}
+pyproj = "^3.6.0"
+rasterio = "^1.4.3"
+pysankey = "^0.0.1"
+seaborn = "^0.13.2"
+plotly = "^6.0.0"
+openpyxl = "^3.1.5"
+kaleido = "0.2.1"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
